@@ -1,16 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <accordion>
+    <template v-slot:button>
+      <button class="test">Salut !</button>
+    </template>
+    <template v-slot:content>On me voit</template>
+  </accordion>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Accordion from './components/Accordion.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    Accordion
   }
 });
 </script>
@@ -23,5 +28,9 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.test {
+  width: 500px;
 }
 </style>
