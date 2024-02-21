@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.keyword {
+    @apply text-orange-600;
+}
+
+.tag {
+    @apply text-orange-400;
+}
+
+.component {
+    @apply text-green-600;
+}
+
+.string {
+    @apply text-red-600;
+}
+
+.table-header {
+    @apply bg-slate-100 flex justify-center items-center p-1 text-center border;
+}
+
+.table-item {
+    @apply border flex justify-center items-center p-1 text-center;
+}
