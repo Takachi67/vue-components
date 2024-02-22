@@ -5,19 +5,19 @@
             <p>You can install the package using <span class="font-bold">npm</span> or <span class="font-bold">yarn</span></p>
             <br>
             <h3>- Using <span class="font-bold">npm</span></h3>
-            <div class="bg-slate-100 rounded-md border p-1">
+            <div class="code">
                 <span class="keyword">npm</span>
                 <span class="ml-1">install takachi67/vue-components</span>
             </div>
             <br>
             <h3>- Using <span class="font-bold">yarn</span></h3>
-            <div class="bg-slate-100 rounded-md border p-1">
+            <div class="code">
                 <span class="keyword">yarn</span>
                 <span class="ml-1">add takachi67/vue-components</span>
             </div>
             <br>
             <p>Now you can import any component you need in your project</p>
-            <div class="bg-slate-100 rounded-md border p-1">
+            <div class="code">
 <pre>
 <span class="tag">&lt;template&gt;</span>
     <span class="component">&lt;Autocomplete&gt;&lt;/Autocomplete&gt;</span>

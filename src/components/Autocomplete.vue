@@ -4,7 +4,7 @@
         <slot name="results">
             <ul :class="['absolute top-10', resultsClass]" v-show="showResults">
                 <li :class="elementClass" v-show="formattedResults.length === 0">No results</li>
-                <li :class="elementClass" v-for="result in formattedResults">{{ displayResult(result) }}</li>
+                <li :class="elementClass" v-for="result in formattedResults" @click.prevent="$emit('selectItem', result)">{{ displayResult(result) }}</li>
             </ul>
         </slot>
     </div>
