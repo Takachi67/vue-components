@@ -1,6 +1,6 @@
 {
   "name": "@takachi67/vue-components",
-  "version": "0.2.3",
+  "version": "0.3.1",
   "main": "dist/@takachi67/vue-components.common.js",
   "files": [
     "src/components/*"
