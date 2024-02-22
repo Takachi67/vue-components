@@ -1,19 +1,24 @@
-# vue-components
+# @takachi67/vue-components
 
-## Project setup
+[![Latest Version on NPM](https://img.shields.io/npm/v/@takachi67/vue-components.svg)](https://npmjs.com/package/@takachi67/vue-components)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
+[![npm](https://img.shields.io/npm/dt/@takachi67/vue-components.svg)](https://www.npmjs.com/package/@takachi67/vue-components)
+[![npm](https://img.shields.io/npm/dw/@takachi67/vue-components.svg)](https://www.npmjs.com/package/@takachi67/vue-components)
+
+> Highly customisable and easy to use Vue JS components 💛
+
+## Installation
+
+Using **npm**
 ```
-npm install
+npm install @takachi67/vue-components
 ```
 
-### Compiles and hot-reloads for development
+Using **yarn**
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+yarn add @takachi67/vue-components
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Documentation
+
+Full documentation is available [here](https://takachi67.github.io/vue-components)
