@@ -21,4 +21,4 @@ yarn add @takachi67/vue-components
 
 ## Documentation
 
-Full documentation is available [here](https://takachi67.github.io/vue-components)
+Full documentation is available [here](https://takachi67.github.io/vue-components) (100% homemade but design inspired by [vue-cal](https://github.com/antoniandre/vue-cal))
