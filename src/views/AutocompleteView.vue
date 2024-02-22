@@ -11,26 +11,6 @@
       <span class="table-header">Type</span>
       <span class="table-header">Default value</span>
 
-      <span class="table-item">containerClass</span>
-      <span class="table-item">Classes used on the component container</span>
-      <span class="table-item">String</span>
-      <span class="table-item italic">empty string</span>
-
-      <span class="table-item">inputClass</span>
-      <span class="table-item">Classes used on the input</span>
-      <span class="table-item">String</span>
-      <span class="table-item">w-full rounded-lg border-2 p-1 focus:border-slate-400 focus:outline-none</span>
-
-      <span class="table-item">resultsClass</span>
-      <span class="table-item">Classes used on the results block</span>
-      <span class="table-item">String</span>
-      <span class="table-item">border-2 rounded-lg w-full max-h-52 overflow-y-auto</span>
-
-      <span class="table-item">elementClass</span>
-      <span class="table-item">Classes used on each result item</span>
-      <span class="table-item">String</span>
-      <span class="table-item">p-2 cursor-pointer hover:bg-slate-50</span>
-
       <span class="table-item">results</span>
       <span class="table-item">Items to display in the results block</span>
       <span class="table-item">Array</span>
@@ -88,7 +68,7 @@
     <p class="mt-2">1. Autocomplete with minimum props</p>
     <AutocompleteBasic></AutocompleteBasic>
     <br>
-    <p>2. Autocomplete with custom classes</p>
+    <p>2. Autocomplete with custom delay and limit</p>
     <AutocompleteCustom></AutocompleteCustom>
   </div>
 </template>

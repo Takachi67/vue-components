@@ -1,6 +1,10 @@
 {
   "name": "@takachi67/vue-components",
-  "version": "0.1.0",
+  "version": "0.2.3",
+  "main": "dist/@takachi67/vue-components.common.js",
+  "files": [
+    "src/components/*"
+  ],
   "keywords": [
     "vue",
     "vuejs",
@@ -16,7 +20,8 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "build-package": "vue-cli-service build --target lib --name @takachi67/vue-components ./src/index.js"
   },
   "dependencies": {
     "highlight.js": "^11.9.0",

@@ -9,8 +9,8 @@
     @selectItem="selectItem"
     @clearInput="selectedElement = {}"
     @onInput="searchText = $event"
-    inputClass="w-full rounded-lg border-2 border-success p-1 focus:border-error focus:outline-none"
-    resultsClass="border-2 border-blue-600 rounded-lg w-full max-h-52 overflow-y-auto"
+    :delay="1000"
+    :limit="2"
   ></Autocomplete>
 </template>
 
@@ -59,8 +59,8 @@ export default {
         @selectItem="selectItem($event, 'autocomplete')"
         @clearInput="selectedElement = {}"
         @onInput="searchText = $event"
-        inputClass="w-full rounded-lg border-2 border-success p-1 focus:border-error focus:outline-none"
-        resultsClass="border-2 border-blue-600 rounded-lg w-full max-h-52 overflow-y-auto"
+        :delay="1000"
+        :limit="2"
       ></Autocomplete>
     </div>
   </div>
