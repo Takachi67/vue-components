@@ -1,7 +1,19 @@
 {
-  "name": "vue-components",
+  "name": "@takachi67/vue-components",
   "version": "0.1.0",
-  "private": true,
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue3",
+    "autocomplete",
+    "select",
+    "search",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Takachi67/vue-components.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
