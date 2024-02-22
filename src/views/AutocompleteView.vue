@@ -4,7 +4,7 @@
     <br>
     <p>Autocomplete component provides a highly customisable input with a results block</p>
     <br>
-    <span class="font-bold">- Available props</span>
+    <p class="font-bold">- Available props</p>
     <div class="grid grid-cols-4 mt-3">
       <span class="table-header">Props</span>
       <span class="table-header">Description</span>
@@ -50,83 +50,58 @@
       <span class="table-item">Max number of items to display in the results block (-1 = no limit)</span>
       <span class="table-item">Number</span>
       <span class="table-item">-1</span>
-    </div>
-    <br>
-    <span class="font-bold">- Examples</span>
-    <br>
-    <br>
-    <p>1. Autocomplete with minimum props</p>
-    <br>
-    <div class="grid grid-cols-2 gap-5">
-      <div class="flex items-center">
-        <div class="code w-full">
-<pre class="text-sm">
-<span class="keyword">import</span> <span class="variable">Autocomplete</span> <span class="keyword">from</span> <span class="string">'../components/Autocomplete.vue'</span>
 
-<span class="keyword">export default</span> {
-  <span class="variable">name</span>: <span class="string">"AutocompleteView"</span>,
-  <span class="variable">components</span>: {
-    <span class="component">Autocomplete</span>
-  },
-  <span class="method">data</span>() {
-    <span class="keyword">return</span> {
-      <span class="variable">value</span>: '',
-      <span class="variable">elements</span>: [
-        { <span class="variable">id</span>: <span class="number">1</span>, <span class="variable">name</span>: <span class="string">"Lucas"</span> },
-        { <span class="variable">id</span>: <span class="number">2</span>, <span class="variable">name</span>: <span class="string">"John"</span> },
-        { <span class="variable">id</span>: <span class="number">3</span>, <span class="variable">name</span>: <span class="string">"Elias"</span> },
-        { <span class="variable">id</span>: <span class="number">4</span>, <span class="variable">name</span>: <span class="string">"Lisa"</span> }
-      ]
-    }
-  },
-  <span class="variable">computed</span>: {
-    <span class="method">formattedResults</span>() {
-      <span class="keyword">return</span> <span class="reserved">this</span>.<span class="variable">elements</span>.<span class="method">filter</span>(<span class="variable">el</span> =>
-        <span class="variable">el</span>.<span class="variable">name</span>.<span class="method">toLowerCase</span>().<span class="method">includes</span>(<span class="reserved">this</span>.<span class="variable">searchText</span>.<span class="method">toLowerCase</span>())
-      )
-    }
-  }
-}
-</pre>     
-        </div>
-      </div>
-      <div>
-        <Autocomplete 
-          :results="formattedResults"
-          :value="selectedElement?.name"
-          @selectItem="selectedElement = $event"
-        ></Autocomplete>
-      </div>
+      <span class="table-item">defaultSearchText</span>
+      <span class="table-item">Default input value</span>
+      <span class="table-item">String</span>
+      <span class="table-item italic">empty string</span>
     </div>
+    <br>
+    <p class="font-bold">- Available slots</p>
+    <div class="grid grid-cols-2 mt-3">
+      <span class="table-header">Slot name</span>
+      <span class="table-header">Description</span>
+
+      <span class="table-item">icon</span>
+      <span class="table-item">Replace the glass icon on the right</span>
+
+      <span class="table-item">results</span>
+      <span class="table-item">Replace the results block</span>
+    </div>
+    <br>
+    <p class="font-bold">- Available events</p>
+    <div class="grid grid-cols-2 mt-3">
+      <span class="table-header">Event</span>
+      <span class="table-header">Description</span>
+
+      <span class="table-item">@selectItem</span>
+      <span class="table-item">When a result is click, this event returns the result</span>
+
+      <span class="table-item">@clearInput</span>
+      <span class="table-item">This event is triggered when the "x" button is clicked or when the search text length is equals to 0</span>
+
+      <span class="table-item">@onInput</span>
+      <span class="table-item">Send the current input value after the delay defined in props</span>
+    </div>
+    <br>
+    <p class="font-bold">- Examples</p>
+    <p class="mt-2">1. Autocomplete with minimum props</p>
+    <AutocompleteBasic></AutocompleteBasic>
+    <br>
+    <p>2. Autocomplete with custom classes</p>
+    <AutocompleteCustom></AutocompleteCustom>
   </div>
 </template>
 
 <script>
-import Autocomplete from '../components/Autocomplete.vue'
+import AutocompleteBasic from '../components/examples/autocomplete/AutocompleteBasic.vue'
+import AutocompleteCustom from '../components/examples/autocomplete/AutocompleteCustom.vue'
 
 export default {
   name: "AutocompleteView",
   components: {
-    Autocomplete
-  },
-  data() {
-    return {
-      searchText: '',
-      selectedElement: {},
-      elements: [
-        { id: 1, name: "Lucas" },
-        { id: 2, name: "John" },
-        { id: 3, name: "Elias" },
-        { id: 4, name: "Lisa" }
-      ]
-    }
-  },
-  computed: {
-    formattedResults() {
-      return this.elements.filter(el =>
-        el.name.toLowerCase().includes(this.searchText.toLowerCase())
-      )
-    }
+    AutocompleteBasic,
+    AutocompleteCustom
   }
 }
 </script>

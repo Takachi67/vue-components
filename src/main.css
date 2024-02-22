@@ -6,22 +6,10 @@
     font-family: "Raleway", sans-serif;
 }
 
-.keyword { @apply text-purple-500; }
-.variable { @apply text-blue-400; }
-.string { @apply text-yellow-700; }
-.number { @apply text-green-500; }
-.reserved { @apply text-blue-800; }
-.method { @apply text-yellow-500; }
-.component { @apply text-green-700; }
-
 .table-header {
     @apply bg-slate-100 flex justify-center items-center p-1 text-center border;
 }
 
 .table-item {
     @apply border flex justify-center items-center p-1 text-center;
-}
-
-.code {
-    @apply bg-slate-100 rounded-md border p-1;
 }

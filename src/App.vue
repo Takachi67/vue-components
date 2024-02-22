@@ -36,6 +36,11 @@ import BacklogView from './views/BacklogView.vue'
 import NotesView from './views/NotesView.vue'
 import AutocompleteView from './views/AutocompleteView.vue'
 import InstallationView from './views/InstallationView.vue'
+import hljs from 'highlight.js'
+import javascript from 'highlight.js/lib/languages/javascript'
+import 'highlight.js/styles/atom-one-dark.css'
+
+hljs.registerLanguage('javascript', javascript)
 
 export default {
   name: 'App',
@@ -44,6 +49,9 @@ export default {
     NotesView,
     AutocompleteView,
     InstallationView
+  },
+  mounted() {
+    hljs.highlightAll()
   }
 }
 </script>

@@ -5,36 +5,31 @@
             <p>You can install the package using <span class="font-bold">npm</span> or <span class="font-bold">yarn</span></p>
             <br>
             <h3>- Using <span class="font-bold">npm</span></h3>
-            <div class="code">
-                <span class="keyword">npm</span>
-                <span class="ml-1">install takachi67/vue-components</span>
-            </div>
-            <br>
+<pre class="w-full">
+<code class="hljs language-javascript rounded-lg border-orange-600 border-2">npm install takachi67/vue-components</code>
+</pre>
             <h3>- Using <span class="font-bold">yarn</span></h3>
-            <div class="code">
-                <span class="keyword">yarn</span>
-                <span class="ml-1">add takachi67/vue-components</span>
-            </div>
-            <br>
+<pre class="w-full">
+<code class="hljs language-javascript rounded-lg border-orange-600 border-2">yarn add takachi67/vue-components</code>
+</pre>
             <p>Now you can import any component you need in your project</p>
-            <div class="code">
-<pre>
-<span class="tag">&lt;template&gt;</span>
-    <span class="component">&lt;Autocomplete&gt;&lt;/Autocomplete&gt;</span>
-<span class="tag">&lt;/template&gt;</span>
+<pre class="w-full">
+<code class="hljs language-javascript rounded-lg border-orange-600 border-2">&lt;template>
+  &lt;Autocomplete>&lt;/Autocomplete>
+&lt;/template>
 
-<span class="tag">&lt;script&gt;</span>
-<span class="keyword">import</span><span class="ml-1">Autocomplete</span><span class="ml-1 keyword">from</span><span class="ml-1 string">"vue-components"</span>
+&lt;script>
+import Autocomplete from "Takachi67/vue-components"
 
-<span><span class="keyword">export default</span> {</span>
-    <span>components: {</span>
-        <span class="component">Autocomplete</span>
-    <span>},</span>
-    <span>...</span>
-<span>}</span>
-<span class="tag">&lt;/script&gt;</span>
-</pre>     
-            </div>
+export default {
+  components: {
+    Autocomplete
+  },
+  ...
+}
+&lt;/script>
+</code>
+</pre>
         </div>
     </div>
 </template>
