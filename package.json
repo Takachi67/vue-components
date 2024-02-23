@@ -20,7 +20,7 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --name docs",
     "build-package": "vue-cli-service build --target lib --name @takachi67/vue-components ./src/index.js"
   },
   "dependencies": {
