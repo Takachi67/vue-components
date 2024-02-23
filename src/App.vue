@@ -22,10 +22,9 @@
       </div>
       <InstallationView></InstallationView>
       <BacklogView></BacklogView>
-      <!-- <div class="flex justify-center mt-5 pt-3 border-t">
-        <NotesView></NotesView>
-      </div> -->
+      <NotesView></NotesView>
       <AutocompleteView></AutocompleteView>
+      <CollapseView></CollapseView>
     </div>
     <div></div>
   </div>
@@ -35,6 +34,7 @@
 import BacklogView from './views/BacklogView.vue'
 import NotesView from './views/NotesView.vue'
 import AutocompleteView from './views/AutocompleteView.vue'
+import CollapseView from './views/CollapseView.vue'
 import InstallationView from './views/InstallationView.vue'
 import hljs from 'highlight.js'
 import javascript from 'highlight.js/lib/languages/javascript'
@@ -48,6 +48,7 @@ export default {
     BacklogView,
     NotesView,
     AutocompleteView,
+    CollapseView,
     InstallationView
   },
   mounted() {

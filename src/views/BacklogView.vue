@@ -32,8 +32,8 @@ export default {
     data() {
         return {
             doneItems: ['Autocomplete'],
-            doingItems: ['Phone input'],
-            todoItems: ['Password input']
+            doingItems: ['Collapse'],
+            todoItems: ['Password']
         }
     }
 }

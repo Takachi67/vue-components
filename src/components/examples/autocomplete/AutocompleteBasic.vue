@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Autocomplete from 'Takachi67/vue-components'
+import Autocomplete from '@takachi67/vue-components'
 
 export default {
   components: {

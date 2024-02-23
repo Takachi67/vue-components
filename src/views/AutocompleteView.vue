@@ -67,8 +67,7 @@
     <p class="font-bold">- Examples</p>
     <p class="mt-2">1. Autocomplete with minimum props</p>
     <AutocompleteBasic></AutocompleteBasic>
-    <br>
-    <p>2. Autocomplete with custom delay and limit</p>
+    <p class="mt-2">2. Autocomplete with custom delay and limit</p>
     <AutocompleteCustom></AutocompleteCustom>
   </div>
 </template>
